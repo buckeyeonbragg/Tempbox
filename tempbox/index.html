@@ -1,5 +1,4 @@
-<!DOCTYPE HTML>
-<head>
+<!DOCTYPE HTML><head>
 	<!-- Metadata -->
 		<meta charset="utf-8" />
 		<meta name="description" content="TEMPBOX 1.0 - HTML5 and CSS3 boilerplate by Santz Design" />
@@ -24,7 +23,8 @@
 
 	<!-- 	DELETE THESE STYLES, AND ALSO DELETE ALL < -- CONTENTS -- > FROM THIS PAGE.
 			THE REST OF THE FILES ARE CLEAN -->
-		<style>
+		
+<style>
 			h1, h2, h3, h4, h5, h6, h7 {
 				line-height: 1.2em;
 				font-family: 'Anton', 'Trebuchet MS', Arial, Helvetica, sans-serif;
@@ -68,6 +68,26 @@
 			
 			.slideshow h1 {padding: 30px 0 20px; }
 			.slideshow h6 {padding: 75px 0 0; }
+			
+			a.tempbox {
+				display: inline-block;
+				width: 114px;
+				height: 19px;
+				background: url(img/tempbox.png) 0 0 no-repeat;
+				float: right;
+				margin-top: 95px;
+			
+				font: 0/0 a;
+				text-shadow: none;
+				color: transparent;
+			
+				transition: opacity .3s ease;
+				-o-transition: opacity .3s ease;
+				-moz-transition: opacity .3s ease;
+				-webkit-transition: opacity .3s ease;
+			}
+			
+			a.tempbox:hover {opacity: .65; }
 			
 			@media only screen and (max-width: 767px) {
 				.slideshow {
@@ -132,7 +152,7 @@
 </section>
 
 <section>
-	<div class="container p10 pb40">
+	<div class="container p10 pb10">
 		<div class="sixteen columns">
 			<article class="eleven columns alpha p30">
 				<h1># Features</h1>
@@ -187,6 +207,7 @@
 					<li>Under <a href="http://opensource.org/licenses/MIT " target="_blank">MIT License</a></li>
 				</ul>
 			</aside>
+			<a class="tempbox" href="https://github.com/SantzDesign/Tempbox" target="_blank">Powered by Tempbox</a>
 		</div>
 	</div>
 </section>
