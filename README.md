@@ -1,7 +1,7 @@
 # Tempbox by Santz Design
 -------------------------------------
 
-Tempbox is a responsive, HTML5, CSS3 and jQuery based boilerplate, designed for mobile friendly development, and optimized for SEO, built with semantically valid HTML5 markup, and structured for speed and ease of use.
+Tempbox is a responsive, HTML5, CSS3 and jQuery based boilerplate, designed for mobile friendly development, optimized for SEO, built with semantically valid HTML5 markup, and structured for speed and ease of use.
 
 # Contents
 -------------------------------------
