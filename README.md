@@ -40,6 +40,13 @@ Tempbox is a responsive, HTML5, CSS3 and jQuery based boilerplate, designed for 
  + Amazing HTML5 backwards browser compatibility with HTML5 Shiv Script
  + Favicon and Apple Touch icon proper &lt;link&gt; tags
 
+# Important Tools
+-------------------------------------
+
+ + <a href="http://refresh-sf.com/yui/" target="_blank">Online YUI Compressor</a> | Online JavaScript/CSS Compression
+ + <a href="http://convertico.org/" target="_blank">ConvertICO</a> | Online PNG to ICO Converter
+ + <a href="https://developers.google.com/speed/pagespeed/insights" target="_blank">PageSpeed Insights</a> | Online Tool that analyzes website loading speed
+
 # Version
 -------------------------------------
 
