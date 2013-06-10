@@ -1,0 +1,39 @@
+# Compression Enabled, Level 5 (recommended) | Possible values: 0 to 9, where 0 = Zero compression and 9 = Maximum compression
+		php_flag zlib.output_compression On
+		php_value zlib.output_compression_level 5
+		
+		<FilesMatch "\.js$">
+				AddHandler application/x-httpd-php .js
+				php_value default_mimetype "text/javascript"
+		</FilesMatch>
+
+# Accept Encoding Headers
+		<IfModule mod_headers.c>
+				<FilesMatch "\.(js|css|xml|gz|html)$">
+						Header append Vary: Accept-Encoding
+				</FilesMatch>
+		</IfModule>
+
+# Last Modified Cache Validators
+		<filesMatch "\.(js)$">
+				Header set Last-Modified "Sat, 01 Apr 2013 00:00:00 GMT"
+		</filesMatch>
+		<filesMatch "\.(css)$">
+				Header set Last-Modified "Sat, 01 Apr 2013 00:00:00 GMT"
+		</filesMatch>
+
+# Leverage Browser Caching Expiration Dates
+		<IfModule mod_expires.c>
+				ExpiresActive On
+		# Default expiration time for any file (1 week)
+				ExpiresDefault A604800
+		# Expiration time for image files
+				ExpiresByType image/x-icon A2592000
+				ExpiresByType image/gif A2592000
+				ExpiresByType image/png A2592000
+				ExpiresByType image/jpg A2592000
+				ExpiresByType image/jpeg A2592000
+		# Expiration time for CSS and JS
+				ExpiresByType text/css A604800
+				ExpiresByType text/javascript A2592000
+		</IfModule>
