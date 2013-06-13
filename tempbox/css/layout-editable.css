@@ -17,10 +17,10 @@
 
 /* USEFULL SNIPPETS
 
-	// Safer than "text-indent: -9999px; " technique:
-			font: 0/0 a;
-			text-shadow: none;
-			color: transparent;
+	// Safer than "text-indent: -9999px; " and "font: 0/0 a; " and "display: none; " technique:
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
 
 ------------------------------------------*/
 
@@ -525,6 +525,9 @@ h7 {font-size: 20px; }
 .mr30 {margin-right: 30px; }
 .mr35 {margin-right: 35px; }
 
+/* HEADER
+------------------------------------------*/
+
 /* SUPERFISH by Joel  Birch
 ------------------------------------------*/
 
@@ -563,7 +566,7 @@ h7 {font-size: 20px; }
 /*** Skin ***/
 .sf-menu {
 	float: right;
-	margin-top: 30px;
+	margin-top: 10px;
 	text-align: center;
 }
 
@@ -678,30 +681,6 @@ nav select {
 }
 
 nav select:focus {outline: none; }
-
-/* HEADER
-------------------------------------------*/
-
-header.container {padding: 15px 0 0; }
-
-header h1 a {
-	display: inline-block;
-	width: 200px;
-	height: 97px;
-	background: url(../img/logo.png) 0 0 no-repeat;
-	float: left;
-
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-
-	transition: opacity .3s ease;
-	-o-transition: opacity .3s ease;
-	-moz-transition: opacity .3s ease;
-	-webkit-transition: opacity .3s ease;
-}
-
-header h1 a:hover {opacity: .85; }
 
 /* FOOTER
 ------------------------------------------*/
