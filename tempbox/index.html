@@ -1,7 +1,9 @@
-<!DOCTYPE HTML><head>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
 	<!-- Metadata -->
 		<meta charset="utf-8" />
-		<meta name="description" content="TEMPBOX 1.0 - HTML5 and CSS3 boilerplate by Santz Design" />
+		<meta name="description" content="TEMPBOX 1.1 - HTML5 and CSS3 boilerplate by Santz Design" />
 		<meta name="author" content="Santz Design" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
@@ -19,12 +21,22 @@
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" />
 
-	<title>TEMPBOX 1.0 - HTML5 and CSS3 boilerplate by Santz Design</title>
+	<title>TEMPBOX 1.1 - HTML5 and CSS3 boilerplate by Santz Design</title>
 
-	<!-- 	DELETE THESE STYLES, AND ALSO DELETE ALL < -- CONTENTS -- > FROM THIS PAGE.
-			THE REST OF THE FILES ARE CLEAN -->
-		
-<style>
+	<!-- 	DELETE FOLLOWING SCRIPT, DELETE FOLLOWING STYLES AND DELETE ALL < - - CONTENTS - - > FROM THIS PAGE.
+			ALL THE REST OF THE FILES ARE CLEAN -->
+
+		<script type="text/javascript">
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+			ga('create', 'UA-41942406-1', 'tempboxboilerplate.com');
+			ga('send', 'pageview');
+		</script>
+
+		<style>
 			header.container {padding: 15px 0 0; }
 			
 			header h1 a {
@@ -67,18 +79,18 @@
 			}
 			
 			.features b {color: #0090ff; font-weight: normal; }
-			.features > ul b {font-weight: 700; }
+			.features li ul li b {font-weight: 700; }
 			
-			.features > li {
+			.features li h3 {
 				font: normal 18px/1.2em 'Anton', Arial, Helvetica, sans-serif;
 				color: #00ccff;
 				text-transform: uppercase;
 				padding-top: 15px;
 			}
 			
-			.features ul {padding-left: 27px; }
+			.features li ul {padding-left: 27px; }
 			
-			.features ul li {
+			.features li ul li {
 				border-left: 3px solid #31e0fe;
 				margin: 8px 0;
 				padding: 1px 0 0 15px;
@@ -138,9 +150,26 @@
 			
 			a.santz:hover {opacity: .65; }
 			
+			#resize {
+				position: fixed;
+				bottom: 0;
+				right: 0;
+				height: 80px;
+				width: 80px;
+				background: url(img/resize.png) 0 0 no-repeat;
+			}
+			
+			h2.update {
+				font-size: 55px;
+				color: #c70621;
+			}
+			
+			.features li ul li.update {border-left: 3px solid #ff5571; }
+			
 			@media only screen and (max-width: 767px) {
 				header {text-align: center; }
 				header h1 a {float: none; }
+				#resize {display: none; }
 				
 				.slideshow {
 					padding: 0 20px;
@@ -157,11 +186,14 @@
 				}
 				.recommended {font-size: 17px; }
 				.features ul li {text-align: justify; }
+				h2.update {font-size: 29px; }
 			}
 			
 			@media only screen and (min-width: 480px) and (max-width: 767px) {
+				#resize {display: none; }
 				.slideshow h6 {padding: 55px 0 0; }
 				.recommended {font-size: 22px; }
+				h2.update {font-size: 42px; }
 			}
 		</style>
 
@@ -170,7 +202,7 @@
 <body>
 
 <header class="container">
-	<h1><a href="http://www.tempboxboilerplate.com">Tempbox Boilerplate 1.0 by Santz Design</a></h1>
+	<h1><a href="http://www.tempboxboilerplate.com">Tempbox Boilerplate 1.1 by Santz Design</a></h1>
 	<nav>
 		<ul class="sf-menu">
 			<li class="current"><a href="#">Home</a></li>
@@ -205,6 +237,7 @@
 				Based on the <a href="https://github.com/h5bp/html5-boilerplate" target="_blank">HTML5 Boilerplate</a>,<br />
 				but powered with amazing plugins and SEO
 			</h1>
+		</div>
 	</div>
 </section>
 
@@ -221,12 +254,18 @@
 </section>
 
 <section>
+	<div class="container acenter p40">
+		<h2 class="update">/*&nbsp;1.1 UPDATE&nbsp;&nbsp;:&nbsp;&nbsp;MORE SEO!&nbsp;*/</h2>
+	</div>
+</section>
+
+<section>
 	<div class="container p10 pb10">
 		<div class="sixteen columns">
 			<article class="eleven columns alpha p30">
 				<h1># Features</h1>
 				<ul class="features">
-					<li>+ <a href="http://www.getskeleton.com/" target="_blank">Skeleton 1.2</a> by Dave Gamache</li>
+					<li><h3>+ <a href="http://www.getskeleton.com/" target="_blank">Skeleton 1.2</a> by Dave Gamache</h3>
 						<ul>
 							<li>Responsive, mobile friendly layout</li>
 							<li>Pure CSS solution</li>
@@ -234,19 +273,26 @@
 							<li>960px grid, 16 columns</li>
 							<li>A more standard and confortable implementation of <b>@media</b> queries than in the HTML5 Boilerplate</li>
 						</ul>
-					<li>+ <a href="https://github.com/joeldbirch/superfish" target="_blank">Superfish 1.7.3</a> by Joel Birch</li>
+					</li>
+					<li><h3>+ <a href="https://github.com/joeldbirch/superfish" target="_blank">Superfish 1.7.3</a> by Joel Birch</h3>
 						<ul>
 							<li>jQuery animated, also works without jQuery</li>
 							<li>Well structured HTML: <b>&lt;nav&gt;</b>, <b>&lt;ul&gt;</b>, <b>&lt;li&gt;</b> and <b>&lt;a&gt;</b> only</li>
 							<li>Ready-to-style menu</li>
 						</ul>
-					<li>+ SEO Optimized</li>
+					</li>
+					<li><h3>+ SEO Optimized</h3>
 						<ul>
 							<li>Semantically valid HTML</li>
 							<li>Important and necessary <b>&lt;meta&gt;</b> tags only (according to Google's recommended implementations)</li>
+							<li class="update">Added important WWW Redirect rule to .htaccess file</li>
+							<li class="update">Added Google and Bing approved sitemap.xml</li>
+							<li class="update">Added robots.txt and humans.txt</li>
+							<li class="update">Added <b>&lt;html lang="en"&gt;</b> tag</li>
 							<li>See also "PageSpeed Optimized"</li>
 						</ul>
-					<li>+ PageSpeed Optimized (Google's PageSpeed Insights &amp; GTMETRIX)</li>
+					</li>
+					<li><h3>+ PageSpeed Optimized (Google's PageSpeed Insights &amp; GTMETRIX)</h3>
 						<ul>
 							<li>Uses correct <b>&lt;meta charset="utf-8" /&gt;</b> (improve resource download parallelization)</li>
 							<li>Scripts located at bottom of page (reduce blocking of page rendering)</li>
@@ -254,32 +300,33 @@
 							<li>Editable CSS and JS files + minified versions (save bytes of data to speed up downloading, parsing, and execution time)</li>
 							<li>Server side optimizations: GZIP Compression, Leverage Browser Caching, Cache Validators, Accept Encodng Headers, Keep-Alive Enabled</li>
 						</ul>
-					<li>+ Amazing HTML5 backwards browser compatibility with HTML5 Shiv Script</li>
-					<li>+ Favicon and Apple Touch icon proper <b>&lt;link&gt;</b> tags</li>
+					</li>
+					<li><h3>+ Amazing HTML5 backwards browser compatibility with HTML5 Shiv Script</h3></li>
+					<li><h3>+ Favicon and Apple Touch icon proper <b>&lt;link&gt;</b> tag</h3></li>
  				</ul>
  			</article>
 			<aside class="five columns omega p30">
 				<h1># Contents</h1>
 				<ul class="features">
-					<li>Standard site structure: img, fonts, scripts and css</li>
-					<li>index.html file</li>
-					<li>layout.css and layout-editable.css files</li>
-					<li>scripts.min.js and scripts.js files</li>
-					<li><a href="https://developers.google.com/speed/libraries/devguide#jquery" target="_blank">jQuery 1.10.1</a> Library from Google's CDN</li>
-					<li><a href="https://code.google.com/p/html5shiv/" target="_blank">HTML5 Shiv 3.6.2</a> from Google's CDN</li>
-					<li><a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing 1.3</a> minified</li>
-					<li>.htaccess file (optimized for Apache servers)</li>
+					<li><h3>Standard site structure: img, fonts, scripts and css</h3></li>
+					<li><h3>index.html file</h3></li>
+					<li><h3>layout.css and layout-editable.css files</h3></li>
+					<li><h3>scripts.min.js and scripts.js files</h3></li>
+					<li><h3><a href="https://developers.google.com/speed/libraries/devguide#jquery" target="_blank">jQuery 1.10.1</a> Library from Google's CDN</h3></li>
+					<li><h3><a href="https://code.google.com/p/html5shiv/" target="_blank">HTML5 Shiv 3.6.2</a> from Google's CDN</h3></li>
+					<li><h3><a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing 1.3</a> minified</h3></li>
+					<li><h3>.htaccess file (optimized for Apache servers)</h3></li>
 				</ul>
 				<h1 class="p30"># GitHub</h1>
 				<ul class="features">
-					<li>Download from Official Repository:</li>
-					<li>Get latest <a href="https://github.com/santzdesign/tempbox" target="_blank">Tempbox</a></li>
+					<li><h3>Download from Official Repository:</h3></li>
+					<li><h3>Get latest <a href="https://github.com/santzdesign/tempbox" target="_blank">Tempbox</a></h3></li>
 				</ul>
 				<h1 class="p30"># License</h1>
 				<ul class="features">
-					<li>'Tempbox' 1.0</li>
-					<li>Copyright ® 2013 Santz Design</li>
-					<li>Under <a href="http://opensource.org/licenses/MIT " target="_blank">MIT License</a></li>
+					<li><h3>'Tempbox' 1.1</h3></li>
+					<li><h3>Copyright ® 2013 Santz Design</h3></li>
+					<li><h3>Under <a href="http://opensource.org/licenses/MIT " target="_blank">MIT License</a></h3></li>
 				</ul>
 			</aside>
 		</div>
@@ -291,14 +338,16 @@
 <footer>
 	<div class="container">
 		<div class="sixteen columns">
-				<a rel="author" class="santz" href="http://www.santz.net" target="_blank">Santz Design</a>
+				<a rel="author" class="santz" href="http://www.santzdesign.com" target="_blank">Santz Design | Freelance web design, optimization and organic SEO</a>
 				<a class="tempbox" href="https://github.com/SantzDesign/Tempbox" target="_blank">Powered by Tempbox</a>
 		</div>
 	</div>
 </footer>
 
+<div id="resize"></div>
+
 	<!-- Scripts -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/scripts.min.js"></script>
 
 		<script type="text/javascript">
@@ -332,7 +381,7 @@
 		</script>
 	<!-- end Scripts -->
 
-	<!-- 	TEMPBOX 1.0 - HTML5 and CSS3 boilerplate by Santz Design | www.santz.net
+	<!-- 	TEMPBOX 1.1 - HTML5 and CSS3 boilerplate by Santz Design | www.santzdesign.com
 			Free for commercial and personal use
 			Copyright ® 2013 Santz Design - Under MIT License: http://opensource.org/licenses/MIT -->
 

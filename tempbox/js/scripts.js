@@ -1,4 +1,4 @@
-/* TEMPBOX 1.0 - HTML5 and CSS3 boilerplate by Santz Design
+/* TEMPBOX 1.1 - HTML5 and CSS3 boilerplate by Santz Design
 ------------------------------------------------------------*/
 
 /* RESOURCES

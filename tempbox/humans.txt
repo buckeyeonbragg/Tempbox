@@ -1,0 +1,20 @@
+/* CREATOR & CONTRIBUTORS [ here you should put everyone that contributed to the site you are developing, erase current data if you want, obviously ] */
+
+Designer/Web Developer: Santiago Baigorria
+Contact: santz [at] hotmail.com.ar
+Twitter: @SantzDesign
+Github: @SantzDesign
+From: Benavidez, Tigre, Argentina
+
+Designer/Web Developer: Dave Gamache
+Twitter: @dhg
+Github: @dhgamache
+From: San Francisco, United States
+
+Programmer: Joel Birch
+Github: @joeldbirch
+
+Last update: 2013/06/24
+Language: English
+Doctype: HTML5
+IDE: Dreamweaver, Photoshop, Google PageSpeed Insights, GTMetrix, YUI Compressor, Yahoo! SmushIt, W3C Validator

@@ -7,6 +7,11 @@
 				php_value default_mimetype "text/javascript"
 		</FilesMatch>
 
+# Redirect non-www to www
+		RewriteEngine On
+		RewriteCond %{HTTP_HOST} ^tempboxboilerplate.com
+		RewriteRule (.*) http://www.tempboxboilerplate.com/$1 [R=301,L]
+
 # Accept Encoding Headers
 		<IfModule mod_headers.c>
 				<FilesMatch "\.(js|css|xml|gz|html)$">
