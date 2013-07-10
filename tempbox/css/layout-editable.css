@@ -273,10 +273,6 @@ or wrap each row of columns in a <div class="row"> */
 	height: 0;
 }
 
-/* Resets */
-.container .column .l, .container .columns .l { margin-left: 0px !important; }
-.container .column .r, .container .columns .r { margin-right: 0px !important; }
-
 /* UNIVERSAL
 ------------------------------------------*/
 
@@ -301,7 +297,6 @@ img {
 * {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
 
