@@ -1,389 +1,99 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<!-- Metadata -->
-		<meta charset="utf-8" />
-		<meta name="description" content="TEMPBOX 1.1 - HTML5 and CSS3 boilerplate by Santz Design" />
-		<meta name="author" content="Santz Design" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-	<!-- CSS & Primary Font -->
-		<link href="css/layout-editable.css" type="text/css" rel="stylesheet" />
-		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Anton" />
-		<link type="text/css" href="http://fonts.googleapis.com/css?family=Shanti" rel="stylesheet" />
+  <!-- CSS & Primary Font -->
+    <link href="css/layout-editable.css" type="text/css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Anton" />
+    <link type="text/css" href="http://fonts.googleapis.com/css?family=Shanti" rel="stylesheet" />
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-	<!-- Favicon & iPhone Icon -->
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" />
+  <!-- Favicon & iPhone Icon -->
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" />
 
-	<title>TEMPBOX 1.1 - HTML5 and CSS3 boilerplate by Santz Design</title>
-
-	<!-- 	DELETE FOLLOWING SCRIPT, DELETE FOLLOWING STYLES AND DELETE ALL < - - CONTENTS - - > FROM THIS PAGE.
-			ALL THE REST OF THE FILES ARE CLEAN -->
-
-		<script type="text/javascript">
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			
-			ga('create', 'UA-41942406-1', 'tempboxboilerplate.com');
-			ga('send', 'pageview');
-		</script>
-
-		<style>
-			header.container {padding: 15px 0 0; }
-			
-			header h1 a {
-				display: inline-block;
-				width: 275px;
-				height: 69px;
-				background: url(img/logo.png) left 0 no-repeat;
-				
-				text-indent: 100%;
-				white-space: nowrap;
-				overflow: hidden;
-				float: left;
-				
-				position: relative;
-				z-index: 10;
-			
-				transition: opacity .2s ease;
-				-o-transition: opacity .2s ease;
-				-moz-transition: opacity .2s ease;
-				-webkit-transition: opacity .2s ease;
-			}
-			
-			header h1 a:hover {opacity: .7; }
-			
-			h1, h2, h3, h4, h5, h6, h7 {
-				line-height: 1.2em;
-				font-family: 'Anton', 'Trebuchet MS', Arial, Helvetica, sans-serif;
-				color: #2e2e2e;
-				text-shadow: none;
-			}
-			
-			.features {
-				font: 400 17px/1.45em 'Shanti', 'Trebuchet MS', Helvetica, sans-serif;
-				color: #3b3b3b;
-			}
-			
-			.recommended {
-				font: normal 37px/2.5em 'Anton', Arial, Helvetica, sans-serif;
-				text-transform: uppercase;
-			}
-			
-			.features b {color: #0090ff; font-weight: normal; }
-			.features li ul li b {font-weight: 700; }
-			
-			.features li h3 {
-				font: normal 18px/1.2em 'Anton', Arial, Helvetica, sans-serif;
-				color: #00ccff;
-				text-transform: uppercase;
-				padding-top: 15px;
-			}
-			
-			.features li ul {padding-left: 27px; }
-			
-			.features li ul li {
-				border-left: 3px solid #31e0fe;
-				margin: 8px 0;
-				padding: 1px 0 0 15px;
-			}
-			
-			a {
-				color: #2ad884;
-				text-decoration: none;
-			}
-			a:hover {text-decoration: underline; }
-			
-			.slideshow {
-				width: 100%;
-				height: 300px;
-				border: 4px dashed #00ccff;
-			}
-			
-			.slideshow h1 {padding: 30px 0 20px; }
-			.slideshow h6 {padding: 75px 0 0; }
-			
-			a.tempbox {
-				display: inline-block;
-				width: 114px;
-				height: 19px;
-				background: url(img/tempbox.png) 0 0 no-repeat;
-				float: right;
-				margin: 41px 0 8px;
-			
-				font: 0/0 a;
-				text-shadow: none;
-				color: transparent;
-			
-				transition: opacity .3s ease;
-				-o-transition: opacity .3s ease;
-				-moz-transition: opacity .3s ease;
-				-webkit-transition: opacity .3s ease;
-			}
-			
-			a.tempbox:hover {opacity: .65; }
-			
-			a.santz {
-				display: inline-block;
-				width: 100px;
-				height: 49px;
-				background: url(img/santz.png) 0 0 no-repeat;
-				margin: 25px 0 8px;
-			
-				font: 0/0 a;
-				text-shadow: none;
-				color: transparent;
-			
-				transition: opacity .3s ease;
-				-o-transition: opacity .3s ease;
-				-moz-transition: opacity .3s ease;
-				-webkit-transition: opacity .3s ease;
-			}
-			
-			a.santz:hover {opacity: .65; }
-			
-			#resize {
-				position: fixed;
-				bottom: 0;
-				right: 0;
-				height: 80px;
-				width: 80px;
-				background: url(img/resize.png) 0 0 no-repeat;
-			}
-			
-			h2.update {
-				font-size: 55px;
-				color: #c70621;
-			}
-			
-			.features li ul li.update {border-left: 3px solid #ff5571; }
-			
-			@media only screen and (max-width: 767px) {
-				header {text-align: center; }
-				header h1 a {float: none; }
-				#resize {display: none; }
-				
-				.slideshow {
-					padding: 0 20px;
-					height: 220px;
-				}
-				.slideshow h1 {
-					font-size: 30px;
-					font-weight: normal;
-					padding: 20px 0 10px;
-				}
-				.slideshow h6 {
-					padding: 30px 0 0;
-					font-weight: normal;
-				}
-				.recommended {font-size: 17px; }
-				.features ul li {text-align: justify; }
-				h2.update {font-size: 29px; }
-			}
-			
-			@media only screen and (min-width: 480px) and (max-width: 767px) {
-				#resize {display: none; }
-				.slideshow h6 {padding: 55px 0 0; }
-				.recommended {font-size: 22px; }
-				h2.update {font-size: 42px; }
-			}
-		</style>
-
+  <title></title>
 </head>
 
 <body>
 
 <header class="container">
-	<h1><a href="http://www.tempboxboilerplate.com">Tempbox Boilerplate 1.1 by Santz Design</a></h1>
-	<nav>
-		<ul class="sf-menu">
-			<li class="current"><a href="#">Home</a></li>
-			<li><a href="#">About Us</a>
-				<ul>
-					<li><a href="#"><span>&emsp;-&nbsp;</span>Company</a></li>
-					<li><a href="#"><span>&emsp;-&nbsp;</span>Team</a></li>
-					<li><a href="#"><span>&emsp;-&nbsp;</span>News</a>
-						<ul>
-							<li><a href="#"><span>&emsp;&emsp;×&nbsp;</span>New</a></li>
-							<li><a href="#"><span>&emsp;&emsp;×&nbsp;</span>Latest</a></li>
-							<li><a href="#"><span>&emsp;&emsp;×&nbsp;</span>Archive</a></li>
-							<li><a href="#"><span>&emsp;&emsp;×&nbsp;</span>Top Rated</a></li>
-						</ul>
-					</li>
-					<li><a href="#"><span>&emsp;-&nbsp;</span>Awards</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Services</a></li>
-			<li><a href="#">Contact Us</a></li>	
-		</ul>
-		<div class="clear"></div>
-	</nav>
+  <h1><a href="http://www.domain.com"></a></h1>
+  <nav>
+    <ul class="sf-menu">
+      <li class="current"><a href="#">Home</a></li>
+      <li><a href="#">About Us</a>
+        <ul>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">News</a>
+            <ul>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Latest</a></li>
+              <li><a href="#">Archive</a></li>
+              <li><a href="#">Top Rated</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Awards</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact Us</a></li> 
+    </ul>
+    <div class="clear"></div>
+  </nav>
 </header>
 
-	<!-- CONTENTS START -->
-
-<section>
-	<div class="container p40">
-		<div class="sixteen columns acenter">
-			<h1>
-				Based on the <a href="https://github.com/h5bp/html5-boilerplate" target="_blank">HTML5 Boilerplate</a>,<br />
-				but powered with amazing plugins and SEO
-			</h1>
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="container p40">
-		<div class="sixteen columns acenter">
-			<div class="slideshow">
-				<h1>Here you can put a nice slider</h1>
-				<h6>Recommended plugins:</h6>
-				<div class="recommended"><a href="http://www.pixedelic.com/plugins/camera/" target="_blank">Camera</a>&emsp;×&emsp;<a href="http://flexslider.woothemes.com/" target="_blank">Flexslider 2</a>&emsp;×&emsp;<a href="http://dev7studios.com/nivo-slider/" target="_blank">Nivo</a></div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section>
-	<div class="container acenter p40">
-		<h2 class="update">/*&nbsp;1.1 UPDATE&nbsp;&nbsp;:&nbsp;&nbsp;MORE SEO!&nbsp;*/</h2>
-	</div>
-</section>
-
-<section>
-	<div class="container p10 pb10">
-		<div class="sixteen columns">
-			<article class="eleven columns alpha p30">
-				<h1># Features</h1>
-				<ul class="features">
-					<li><h3>+ <a href="http://www.getskeleton.com/" target="_blank">Skeleton 1.2</a> by Dave Gamache</h3>
-						<ul>
-							<li>Responsive, mobile friendly layout</li>
-							<li>Pure CSS solution</li>
-							<li>Lightweight build: just 5,6kb</li>
-							<li>960px grid, 16 columns</li>
-							<li>A more standard and confortable implementation of <b>@media</b> queries than in the HTML5 Boilerplate</li>
-						</ul>
-					</li>
-					<li><h3>+ <a href="https://github.com/joeldbirch/superfish" target="_blank">Superfish 1.7.3</a> by Joel Birch</h3>
-						<ul>
-							<li>jQuery animated, also works without jQuery</li>
-							<li>Well structured HTML: <b>&lt;nav&gt;</b>, <b>&lt;ul&gt;</b>, <b>&lt;li&gt;</b> and <b>&lt;a&gt;</b> only</li>
-							<li>Ready-to-style menu</li>
-						</ul>
-					</li>
-					<li><h3>+ SEO Optimized</h3>
-						<ul>
-							<li>Semantically valid HTML</li>
-							<li>Important and necessary <b>&lt;meta&gt;</b> tags only (according to Google's recommended implementations)</li>
-							<li class="update">Added important WWW Redirect rule to .htaccess file</li>
-							<li class="update">Added Google and Bing approved sitemap.xml</li>
-							<li class="update">Added robots.txt and humans.txt</li>
-							<li class="update">Added <b>&lt;html lang="en"&gt;</b> tag</li>
-							<li>See also "PageSpeed Optimized"</li>
-						</ul>
-					</li>
-					<li><h3>+ PageSpeed Optimized (Google's PageSpeed Insights &amp; GTMETRIX)</h3>
-						<ul>
-							<li>Uses correct <b>&lt;meta charset="utf-8" /&gt;</b> (improve resource download parallelization)</li>
-							<li>Scripts located at bottom of page (reduce blocking of page rendering)</li>
-							<li>All CSS in one file, all JS in one file, avoiding <b>$include</b> and <b>@import</b> directives (minimize HTTP requests)</li>
-							<li>Editable CSS and JS files + minified versions (save bytes of data to speed up downloading, parsing, and execution time)</li>
-							<li>Server side optimizations: GZIP Compression, Leverage Browser Caching, Cache Validators, Accept Encodng Headers, Keep-Alive Enabled</li>
-						</ul>
-					</li>
-					<li><h3>+ Amazing HTML5 backwards browser compatibility with HTML5 Shiv Script</h3></li>
-					<li><h3>+ Favicon and Apple Touch icon proper <b>&lt;link&gt;</b> tag</h3></li>
- 				</ul>
- 			</article>
-			<aside class="five columns omega p30">
-				<h1># Contents</h1>
-				<ul class="features">
-					<li><h3>Standard site structure: img, fonts, scripts and css</h3></li>
-					<li><h3>index.html file</h3></li>
-					<li><h3>layout.css and layout-editable.css files</h3></li>
-					<li><h3>scripts.min.js and scripts.js files</h3></li>
-					<li><h3><a href="https://developers.google.com/speed/libraries/devguide#jquery" target="_blank">jQuery 1.10.1</a> Library from Google's CDN</h3></li>
-					<li><h3><a href="https://code.google.com/p/html5shiv/" target="_blank">HTML5 Shiv 3.6.2</a> from Google's CDN</h3></li>
-					<li><h3><a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jQuery Easing 1.3</a> minified</h3></li>
-					<li><h3>.htaccess file (optimized for Apache servers)</h3></li>
-				</ul>
-				<h1 class="p30"># GitHub</h1>
-				<ul class="features">
-					<li><h3>Download from Official Repository:</h3></li>
-					<li><h3>Get latest <a href="https://github.com/santzdesign/tempbox" target="_blank">Tempbox</a></h3></li>
-				</ul>
-				<h1 class="p30"># License</h1>
-				<ul class="features">
-					<li><h3>'Tempbox' 1.1</h3></li>
-					<li><h3>Copyright ® 2013 Santz Design</h3></li>
-					<li><h3>Under <a href="http://opensource.org/licenses/MIT " target="_blank">MIT License</a></h3></li>
-				</ul>
-			</aside>
-		</div>
-	</div>
-</section>
-
- 	<!-- CONTENTS END -->
-
 <footer>
-	<div class="container">
-		<div class="sixteen columns">
-				<a rel="author" class="santz" href="http://www.santzdesign.com" target="_blank">Santz Design | Freelance web design, optimization and organic SEO</a>
-				<a class="tempbox" href="https://github.com/SantzDesign/Tempbox" target="_blank">Powered by Tempbox</a>
-		</div>
-	</div>
 </footer>
 
-<div id="resize"></div>
+  <!-- Scripts -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.min.js"></script>
 
-	<!-- Scripts -->
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/scripts.min.js"></script>
+    <script type="text/javascript">
+      (function($){
+        $(document).ready(function(){
+          var menu = $('.sf-menu').superfish({
+          });
+        });
+      })(jQuery);
+    </script>
+    
+     <script type="text/javascript">
+      $(document).ready(function() {
+        $("<select />").appendTo("nav");
+        $("<option />", {
+          "selected": "selected",
+          "value"   : "",
+          "text"    : "Ir a..."
+        }).appendTo("nav select");  
+        $("nav li a").each(function() {
+          var el = $(this);
+          $("<option />", {
+            "value"   : el.attr("href"),
+            "text"    : el.text()
+          }).appendTo("nav select");
+        });
+        $("nav select").change(function() {
+          window.location = $(this).find("option:selected").val();
+        });
+      });
+    </script>
+  <!-- end Scripts -->
 
-		<script type="text/javascript">
-			(function($){
-				$(document).ready(function(){
-					var menu = $('.sf-menu').superfish({
-					});
-				});
-			})(jQuery);
-		</script>
-		
-		 <script type="text/javascript">
-			$(document).ready(function() {
-				$("<select />").appendTo("nav");
-				$("<option />", {
-				   "selected": "selected",
-				   "value"   : "",
-				   "text"    : "Ir a..."
-				}).appendTo("nav select");	
-				$("nav li a").each(function() {
-					var el = $(this);
-					$("<option />", {
-						"value"   : el.attr("href"),
-						"text"    : el.text()
-					}).appendTo("nav select");
-				});
-				$("nav select").change(function() {
-					window.location = $(this).find("option:selected").val();
-				});
-			});
-		</script>
-	<!-- end Scripts -->
-
-	<!-- 	TEMPBOX 1.1 - HTML5 and CSS3 boilerplate by Santz Design | www.santzdesign.com
-			Free for commercial and personal use
-			Copyright ® 2013 Santz Design - Under MIT License: http://opensource.org/licenses/MIT -->
+  <!--  TEMPBOX 1.1 - HTML5 and CSS3 boilerplate by Santz Design | www.santzdesign.com
+        Free for commercial and personal use
+        Copyright ® 2013 Santz Design - Under MIT License: http://opensource.org/licenses/MIT -->
 
 </body>
 </html>

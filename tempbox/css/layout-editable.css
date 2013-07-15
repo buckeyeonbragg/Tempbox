@@ -4,48 +4,48 @@
 
 /* RESOURCES
 
-	-| Skeleton 1.2 |-
-	Copyright 2013, Dave Gamache | www.getskeleton.com
-	
-	-| Superfish 1.7.3 |-
-	Copyright 2013, Joel Birch | www.github.com/joeldbirch/superfish
+  -| Skeleton 1.2 |-
+  Copyright 2013, Dave Gamache | www.getskeleton.com
+  
+  -| Superfish 1.7.3 |-
+  Copyright 2013, Joel Birch | www.github.com/joeldbirch/superfish
 
-	-| Reset CSS 2.0 |-
-	Copyright 2013, Eric Meyer | www.cssreset.com
+  -| Reset CSS 2.0 |-
+  Copyright 2013, Eric Meyer | www.cssreset.com
 
 ------------------------------------------*/
 
 /* USEFULL SNIPPETS
 
-	// Safer than "text-indent: -9999px; " and "font: 0/0 a; " and "display: none; " technique:
-			text-indent: 100%;
-			white-space: nowrap;
-			overflow: hidden;
+  // Safer than "text-indent: -9999px; " and "font: 0/0 a; " and "display: none; " technique:
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
 
 ------------------------------------------*/
 
 /* INDEX
 
-		# RESOURCES
-		# USEFULL SNIPPETS
-		# INDEX
-		# CSS RESET
-		# SKELETON
-		# UNIVERSAL
-		# HEADINGS & TEXT
-		# GENERAL
-		# SUPERFISH MENU
-		# HEADER
-		# FOOTER
-		# HEADER
-		# FORMS
-		# LIGHTBOX
-		# SLIDER
-		# -
-		# -
-		# -
-		# MEDIA QUERIES
-		# FONT-FACES
+    # RESOURCES
+    # USEFULL SNIPPETS
+    # INDEX
+    # CSS RESET
+    # SKELETON
+    # UNIVERSAL
+    # HEADINGS & TEXT
+    # GENERAL
+    # SUPERFISH MENU
+    # HEADER
+    # FOOTER
+    # HEADER
+    # FORMS
+    # LIGHTBOX
+    # SLIDER
+    # -
+    # -
+    # -
+    # MEDIA QUERIES
+    # FONT-FACES
 ------------------------------------------*/
 
 /* CSS RESET by Eric Meyner
@@ -56,193 +56,190 @@ a, abbr, acronym, address ,applet, article, aside, audio, b, blockquote, big, bo
 /* SKELETON by Dave Gamache
 ------------------------------------------*/
 
-.wrapper 			{ width: 100%; overflow: hidden; position: relative; }
-.extra-wrap 		{ overflow: hidden; display: block; }
+.wrapper      { width: 100%; overflow: hidden; position: relative; }
+.extra-wrap   { overflow: hidden; display: block; }
 
 /* Base 960 Grid */
 
-    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
-    .container .column,
-    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
-    .row                                        { margin-bottom: 20px; }
+  .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+  .container .column,
+  .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+  .row                                        { margin-bottom: 20px; }
 
-    /* Nested Column Classes */
-    .column.alpha, .columns.alpha               { margin-left: 0; }
-    .column.omega, .columns.omega               { margin-right: 0; }
+  /* Nested Column Classes */
+  .column.alpha, .columns.alpha               { margin-left: 0; }
+  .column.omega, .columns.omega               { margin-right: 0; }
 
-    /* Base Grid */
-    .container .one.column,
-    .container .one.columns                     { width: 40px;  }
-    .container .two.columns                     { width: 100px; }
-    .container .three.columns                   { width: 160px; }
-    .container .four.columns                    { width: 220px; }
-    .container .five.columns                    { width: 280px; }
-	.container .fivesix.columns                 { width: 310px; }
-    .container .six.columns                     { width: 340px; }
-    .container .seven.columns                   { width: 400px; }
-    .container .eight.columns                   { width: 460px; }
-    .container .nine.columns                    { width: 520px; }
-    .container .ten.columns                     { width: 580px; }
-    .container .eleven.columns                  { width: 640px; }
-    .container .twelve.columns                  { width: 700px; }
-    .container .thirteen.columns                { width: 760px; }
-    .container .fourteen.columns                { width: 820px; }
-    .container .fifteen.columns                 { width: 880px; }
-    .container .sixteen.columns                 { width: 940px; }
+  /* Base Grid */
+  .container .one.column,
+  .container .one.columns                     { width: 40px;  }
+  .container .two.columns                     { width: 100px; }
+  .container .three.columns                   { width: 160px; }
+  .container .four.columns                    { width: 220px; }
+  .container .five.columns                    { width: 280px; }
+  .container .six.columns                     { width: 340px; }
+  .container .seven.columns                   { width: 400px; }
+  .container .eight.columns                   { width: 460px; }
+  .container .nine.columns                    { width: 520px; }
+  .container .ten.columns                     { width: 580px; }
+  .container .eleven.columns                  { width: 640px; }
+  .container .twelve.columns                  { width: 700px; }
+  .container .thirteen.columns                { width: 760px; }
+  .container .fourteen.columns                { width: 820px; }
+  .container .fifteen.columns                 { width: 880px; }
+  .container .sixteen.columns                 { width: 940px; }
 
-    .container .one-third.column                { width: 300px; }
-    .container .two-thirds.column               { width: 620px; }
+  .container .one-third.column                { width: 300px; }
+  .container .two-thirds.column               { width: 620px; }
 
-    /* Offsets */
-    .container .offset-by-one                   { padding-left: 60px;  }
-    .container .offset-by-two                   { padding-left: 120px; }
-    .container .offset-by-three                 { padding-left: 180px; }
-    .container .offset-by-four                  { padding-left: 240px; }
-    .container .offset-by-five                  { padding-left: 300px; }
-    .container .offset-by-six                   { padding-left: 360px; }
-    .container .offset-by-seven                 { padding-left: 420px; }
-    .container .offset-by-eight                 { padding-left: 480px; }
-    .container .offset-by-nine                  { padding-left: 540px; }
-    .container .offset-by-ten                   { padding-left: 600px; }
-    .container .offset-by-eleven                { padding-left: 660px; }
-    .container .offset-by-twelve                { padding-left: 720px; }
-    .container .offset-by-thirteen              { padding-left: 780px; }
-    .container .offset-by-fourteen              { padding-left: 840px; }
-    .container .offset-by-fifteen               { padding-left: 900px; }
+  /* Offsets */
+  .container .offset-by-one                   { padding-left: 60px;  }
+  .container .offset-by-two                   { padding-left: 120px; }
+  .container .offset-by-three                 { padding-left: 180px; }
+  .container .offset-by-four                  { padding-left: 240px; }
+  .container .offset-by-five                  { padding-left: 300px; }
+  .container .offset-by-six                   { padding-left: 360px; }
+  .container .offset-by-seven                 { padding-left: 420px; }
+  .container .offset-by-eight                 { padding-left: 480px; }
+  .container .offset-by-nine                  { padding-left: 540px; }
+  .container .offset-by-ten                   { padding-left: 600px; }
+  .container .offset-by-eleven                { padding-left: 660px; }
+  .container .offset-by-twelve                { padding-left: 720px; }
+  .container .offset-by-thirteen              { padding-left: 780px; }
+  .container .offset-by-fourteen              { padding-left: 840px; }
+  .container .offset-by-fifteen               { padding-left: 900px; }
 
 
 
 /* Tablet (Portrait) */
 
-    /* Note: Design for a width of 768px */
+  /* Note: Design for a width of 768px */
 
-    @media only screen and (min-width: 768px) and (max-width: 959px) {
-        .container                                  { width: 768px; }
-        .container .column,
-        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
-        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
-        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
-        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    .container                                  { width: 768px; }
+    .container .column,
+    .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+    .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+    .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+    .alpha.omega                                { margin-left: 0; margin-right: 0; }
 
-        .container .one.column,
-        .container .one.columns                     { width: 28px; }
-        .container .two.columns                     { width: 76px; }
-        .container .three.columns                   { width: 124px; }
-        .container .four.columns                    { width: 172px; }
-        .container .five.columns                    { width: 220px; }
-		.container .fivesix.columns                 { width: 243px; }
-        .container .six.columns                     { width: 268px; }
-        .container .seven.columns                   { width: 316px; }
-        .container .eight.columns                   { width: 364px; }
-        .container .nine.columns                    { width: 412px; }
-        .container .ten.columns                     { width: 460px; }
-        .container .eleven.columns                  { width: 508px; }
-        .container .twelve.columns                  { width: 556px; }
-        .container .thirteen.columns                { width: 604px; }
-        .container .fourteen.columns                { width: 652px; }
-        .container .fifteen.columns                 { width: 700px; }
-        .container .sixteen.columns                 { width: 748px; }
+    .container .one.column,
+    .container .one.columns                     { width: 28px; }
+    .container .two.columns                     { width: 76px; }
+    .container .three.columns                   { width: 124px; }
+    .container .four.columns                    { width: 172px; }
+    .container .five.columns                    { width: 220px; }
+    .container .six.columns                     { width: 268px; }
+    .container .seven.columns                   { width: 316px; }
+    .container .eight.columns                   { width: 364px; }
+    .container .nine.columns                    { width: 412px; }
+    .container .ten.columns                     { width: 460px; }
+    .container .eleven.columns                  { width: 508px; }
+    .container .twelve.columns                  { width: 556px; }
+    .container .thirteen.columns                { width: 604px; }
+    .container .fourteen.columns                { width: 652px; }
+    .container .fifteen.columns                 { width: 700px; }
+    .container .sixteen.columns                 { width: 748px; }
 
-        .container .one-third.column                { width: 236px; }
-        .container .two-thirds.column               { width: 492px; }
+    .container .one-third.column                { width: 236px; }
+    .container .two-thirds.column               { width: 492px; }
 
-        /* Offsets */
-        .container .offset-by-one                   { padding-left: 48px; }
-        .container .offset-by-two                   { padding-left: 96px; }
-        .container .offset-by-three                 { padding-left: 144px; }
-        .container .offset-by-four                  { padding-left: 192px; }
-        .container .offset-by-five                  { padding-left: 240px; }
-        .container .offset-by-six                   { padding-left: 288px; }
-        .container .offset-by-seven                 { padding-left: 336px; }
-        .container .offset-by-eight                 { padding-left: 384px; }
-        .container .offset-by-nine                  { padding-left: 432px; }
-        .container .offset-by-ten                   { padding-left: 480px; }
-        .container .offset-by-eleven                { padding-left: 528px; }
-        .container .offset-by-twelve                { padding-left: 576px; }
-        .container .offset-by-thirteen              { padding-left: 624px; }
-        .container .offset-by-fourteen              { padding-left: 672px; }
-        .container .offset-by-fifteen               { padding-left: 720px; }
-    }
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: 48px; }
+    .container .offset-by-two                   { padding-left: 96px; }
+    .container .offset-by-three                 { padding-left: 144px; }
+    .container .offset-by-four                  { padding-left: 192px; }
+    .container .offset-by-five                  { padding-left: 240px; }
+    .container .offset-by-six                   { padding-left: 288px; }
+    .container .offset-by-seven                 { padding-left: 336px; }
+    .container .offset-by-eight                 { padding-left: 384px; }
+    .container .offset-by-nine                  { padding-left: 432px; }
+    .container .offset-by-ten                   { padding-left: 480px; }
+    .container .offset-by-eleven                { padding-left: 528px; }
+    .container .offset-by-twelve                { padding-left: 576px; }
+    .container .offset-by-thirteen              { padding-left: 624px; }
+    .container .offset-by-fourteen              { padding-left: 672px; }
+    .container .offset-by-fifteen               { padding-left: 720px; }
+  }
 
 
 /*  Mobile (Portrait) */
 
-    /* Note: Design for a width of 320px */
+  /* Note: Design for a width of 320px */
 
-    @media only screen and (max-width: 767px) {
-        .container { width: 300px; }
-        .container .columns,
-        .container .column { margin: 0; }
+  @media only screen and (max-width: 767px) {
+    .container { width: 300px; }
+    .container .columns,
+    .container .column { margin: 0; }
 
-        .container .one.column,
-        .container .one.columns,
-        .container .two.columns,
-        .container .three.columns,
-        .container .four.columns,
-        .container .five.columns,
-        .container .six.columns,
-        .container .seven.columns,
-        .container .eight.columns,
-        .container .nine.columns,
-        .container .ten.columns,
-        .container .eleven.columns,
-        .container .twelve.columns,
-        .container .thirteen.columns,
-        .container .fourteen.columns,
-        .container .fifteen.columns,
-        .container .sixteen.columns,
-        .container .one-third.column,
-        .container .two-thirds.column  { width: 300px; }
+    .container .one.column,
+    .container .one.columns,
+    .container .two.columns,
+    .container .three.columns,
+    .container .four.columns,
+    .container .five.columns,
+    .container .six.columns,
+    .container .seven.columns,
+    .container .eight.columns,
+    .container .nine.columns,
+    .container .ten.columns,
+    .container .eleven.columns,
+    .container .twelve.columns,
+    .container .thirteen.columns,
+    .container .fourteen.columns,
+    .container .fifteen.columns,
+    .container .sixteen.columns,
+    .container .one-third.column,
+    .container .two-thirds.column   { width: 300px; }
 
-        /* Offsets */
-        .container .offset-by-one,
-        .container .offset-by-two,
-        .container .offset-by-three,
-        .container .offset-by-four,
-        .container .offset-by-five,
-        .container .offset-by-six,
-        .container .offset-by-seven,
-        .container .offset-by-eight,
-        .container .offset-by-nine,
-        .container .offset-by-ten,
-        .container .offset-by-eleven,
-        .container .offset-by-twelve,
-        .container .offset-by-thirteen,
-        .container .offset-by-fourteen,
-        .container .offset-by-fifteen { padding-left: 0; }
-
-    }
+    /* Offsets */
+    .container .offset-by-one,
+    .container .offset-by-two,
+    .container .offset-by-three,
+    .container .offset-by-four,
+    .container .offset-by-five,
+    .container .offset-by-six,
+    .container .offset-by-seven,
+    .container .offset-by-eight,
+    .container .offset-by-nine,
+    .container .offset-by-ten,
+    .container .offset-by-eleven,
+    .container .offset-by-twelve,
+    .container .offset-by-thirteen,
+    .container .offset-by-fourteen,
+    .container .offset-by-fifteen   { padding-left: 0; }
+  }
 
 
 /* Mobile (Landscape) */
 
-    /* Note: Design for a width of 480px */
+  /* Note: Design for a width of 480px */
 
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .container { width: 420px; }
-        .container .columns,
-        .container .column { margin: 0; }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container { width: 420px; }
+    .container .columns,
+    .container .column { margin: 0; }
 
-        .container .one.column,
-        .container .one.columns,
-        .container .two.columns,
-        .container .three.columns,
-        .container .four.columns,
-        .container .five.columns,
-        .container .six.columns,
-        .container .seven.columns,
-        .container .eight.columns,
-        .container .nine.columns,
-        .container .ten.columns,
-        .container .eleven.columns,
-        .container .twelve.columns,
-        .container .thirteen.columns,
-        .container .fourteen.columns,
-        .container .fifteen.columns,
-        .container .sixteen.columns,
-        .container .one-third.column,
-        .container .two-thirds.column { width: 420px; }
-    }
+    .container .one.column,
+    .container .one.columns,
+    .container .two.columns,
+    .container .three.columns,
+    .container .four.columns,
+    .container .five.columns,
+    .container .six.columns,
+    .container .seven.columns,
+    .container .eight.columns,
+    .container .nine.columns,
+    .container .ten.columns,
+    .container .eleven.columns,
+    .container .twelve.columns,
+    .container .thirteen.columns,
+    .container .fourteen.columns,
+    .container .fifteen.columns,
+    .container .sixteen.columns,
+    .container .one-third.column,
+    .container .two-thirds.column { width: 420px; }
+  }
 
 
 /* Clearing */
@@ -253,36 +250,36 @@ a, abbr, acronym, address ,applet, article, aside, audio, b, blockquote, big, bo
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
 .clearfix:before, .clearfix:after, .row:before, .row:after {
-	content: '\0020';
-	display: block;
-	overflow: hidden;
-	visibility: hidden;
-	width: 0;
-	height: 0;
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 .row:after, .clearfix:after {clear: both; }
 .row, .clearfix {zoom: 1; }
 
 /* You can also use a <br class="clear" /> to clear columns */
 .clear {
-	clear: both;
-	display: block;
-	overflow: hidden;
-	visibility: hidden;
-	width: 0;
-	height: 0;
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 /* UNIVERSAL
 ------------------------------------------*/
 
 body {
-	width: ;
-	position: ;
-	margin: ;
-	background: ;
-	color: #;
-	font: ;
+  width: ;
+  position: ;
+  margin: ;
+  background: ;
+  color: #;
+  font: ;
 }
 
 html, body {height: 100%; }
@@ -290,24 +287,24 @@ html, body {height: 100%; }
 a img {border: 0; }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 * {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 ::-moz-selection {
-    background-color: #;
-    color: #;
+  background-color: #;
+  color: #;
 }
 
 ::selection {
-    background-color: #;
-    color: #;
+  background-color: #;
+  color: #;
 }
 
 a:link {color: #; }
@@ -318,11 +315,11 @@ a:active {color: #; }
 /* HEADINGS & TEXT
 ------------------------------------------*/
 
-h1, h2, h3, h4, h5, h6, h7 {
-	line-height: ;
-	font-family: ;
-	color: ;
-	text-shadow: ;
+h1, h2, h3, h4, h5, h6 {
+  line-height: ;
+  font-family: ;
+  color: ;
+  text-shadow: ;
 }
 
 h1 {font-size: 36px; }
@@ -331,11 +328,10 @@ h3 {font-size: 28px; }
 h4 {font-size: 26px; }
 h5 {font-size: 24px; }
 h6 {font-size: 22px; }
-h7 {font-size: 20px; }
 
 .text-16, .text-15, .text-14, .text-13, .text-12, .text-11, .text-10, .text-9 {
-	font-weight: ;
-	text-align: ;
+  font-weight: ;
+  text-align: ;
 }
 
 .text-16 {font-size: 16px; }
@@ -346,42 +342,6 @@ h7 {font-size: 20px; }
 .text-11 {font-size: 11px; }
 .text-10 {font-size: 10px; }
 .text-9 {font-size: 9px; }
-
-.sub-18 {
-	font-family: ;
-	font-weight: ;
-	color: #;
-	font-size: px;
-	text-align: ;
-	text-indent: px;
-}
-
-.sub-17 {
-	font-family: ;
-	font-weight: ;
-	color: #;
-	font-size: px;
-	text-align: ;
-	text-indent: px;
-}
-
-.sub-16 {
-	font-family: ;
-	font-weight: ;
-	color: #;
-	font-size: px;
-	text-align: ;
-	text-indent: px;
-}
-
-.sub-15 {
-	font-family: ;
-	font-weight: ;
-	color: #;
-	font-size: px;
-	text-align: ;
-	text-indent: px;
-}
 
 /* GENERAL
 ------------------------------------------*/
@@ -404,145 +364,36 @@ h7 {font-size: 20px; }
 .overflow {overflow: hidden; }
 
 .img-indent {
-	float: left;
-	margin: 0 15px 0 15px;
+  float: left;
+  margin: 0 15px 0 15px;
 }
 
 .img-indent-r {
-	float: right;
-	margin: 0 0 15px 15px;
+  float: right;
+  margin: 0 0 15px 15px;
 }
-
-.p0 {padding-top: 0 !important; }
-.p1 {padding-top: 1px; }
-.p2 {padding-top: 2px; }
-.p3 {padding-top: 3px; }
-.p4 {padding-top: 4px; }
-.p5 {padding-top: 5px; }
-.p6 {padding-top: 6px; }
-.p7 {padding-top: 7px; }
-.p8 {padding-top: 8px; }
-.p9 {padding-top: 9px; }
-.p10 {padding-top: 10px; }
-.p11 {padding-top: 11px; }
-.p12 {padding-top: 12px; }
-.p13 {padding-top: 13px; }
-.p14 {padding-top: 14px; }
-.p15 {padding-top: 15px; }
-.p16 {padding-top: 16px; }
-.p17 {padding-top: 17px; }
-.p18 {padding-top: 18px; }
-.p19 {padding-top: 19px; }
-.p20 {padding-top: 20px; }
-.p21 {padding-top: 21px; }
-.p25 {padding-top: 25px; }
-.p30 {padding-top: 30px; }
-.p35 {padding-top: 35px; }
-.p40 {padding-top: 40px; }
-.p45 {padding-top: 45px; }
-.p50 {padding-top: 50px; }
-.p55 {padding-top: 55px; }
-.p60 {padding-top: 60px; }
-.p65 {padding-top: 65px; }
-.p70 {padding-top: 70px; }
-.p75 {padding-top: 75px; }
-
-.pb0 {padding-bottom: 0 !important; }
-.pb1 {padding-bottom: 1px; }
-.pb2 {padding-bottom: 2px; }
-.pb3 {padding-bottom: 3px; }
-.pb4 {padding-bottom: 4px; }
-.pb5 {padding-bottom: 5px; }
-.pb6 {padding-bottom: 6px; }
-.pb7 {padding-bottom: 7px; }
-.pb8 {padding-bottom: 8px; }
-.pb9 {padding-bottom: 9px; }
-.pb10 {padding-bottom: 10px; }
-.pb11 {padding-bottom: 11px; }
-.pb12 {padding-bottom: 12px; }
-.pb13 {padding-bottom: 13px; }
-.pb14 {padding-bottom: 14px; }
-.pb15 {padding-bottom: 15px; }
-.pb16 {padding-bottom: 16px; }
-.pb17 {padding-bottom: 17px; }
-.pb18 {padding-bottom: 18px; }
-.pb19 {padding-bottom: 19px; }
-.pb20 {padding-bottom: 20px; }
-.pb25 {padding-bottom: 25px; }
-.pb30 {padding-bottom: 30px; }
-.pb35 {padding-bottom: 35px; }
-.pb40 {padding-bottom: 40px; }
-.pb45 {padding-bottom: 45px; }
-.pb50 {padding-bottom: 50px; }
-.pb55 {padding-bottom: 55px; }
-.pb60 {padding-bottom: 60px; }
-.pb65 {padding-bottom: 65px; }
-.pb70 {padding-bottom: 70px; }
-.pb75 {padding-bottom: 75px; }
-
-.ml1 {margin-left: 1px; }
-.ml2 {margin-left: 2px; }
-.ml3 {margin-left: 3px; }
-.ml4 {margin-left: 4px; }
-.ml5 {margin-left: 5px; }
-.ml6 {margin-left: 6px; }
-.ml7 {margin-left: 7px; }
-.ml8 {margin-left: 8px; }
-.ml9 {margin-left: 9px; }
-.ml10 {margin-left: 10px; }
-.ml11 {margin-left: 11px; }
-.ml12 {margin-left: 12px; }
-.ml13 {margin-left: 13px; }
-.ml14 {margin-left: 14px; }
-.ml15 {margin-left: 15px; }
-.ml20 {margin-left: 20px; }
-.ml25 {margin-left: 25px; }
-.ml30 {margin-left: 30px; }
-.ml35 {margin-left: 35px; }
-
-.mr1 {margin-right: 1px; }
-.mr2 {margin-right: 2px; }
-.mr3 {margin-right: 3px; }
-.mr4 {margin-right: 4px; }
-.mr5 {margin-right: 5px; }
-.mr6 {margin-right: 6px; }
-.mr7 {margin-right: 7px; }
-.mr8 {margin-right: 8px; }
-.mr9 {margin-right: 9px; }
-.mr10 {margin-right: 10px; }
-.mr11 {margin-right: 11px; }
-.mr12 {margin-right: 12px; }
-.mr13 {margin-right: 13px; }
-.mr14 {margin-right: 14px; }
-.mr15 {margin-right: 15px; }
-.mr20 {margin-right: 20px; }
-.mr25 {margin-right: 25px; }
-.mr30 {margin-right: 30px; }
-.mr35 {margin-right: 35px; }
 
 /* HEADER
 ------------------------------------------*/
-
-header {padding-top: 25px !important; }
 
 /* SUPERFISH by Joel  Birch
 ------------------------------------------*/
 
 /*** Essentials ***/
 .sf-menu, .sf-menu * {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .sf-menu li {position: relative; }
 
 .sf-menu ul {
-	position: absolute;
-	display: none;
-	top: 100%;
-	left: 0;
-	z-index: 99;
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
 }
 
 .sf-menu > li {float: left; }
@@ -551,47 +402,47 @@ header {padding-top: 25px !important; }
 .sf-menu li.sfHover > ul {display: block; }
 
 .sf-menu a {
-	display: block;
-	position: relative;
+  display: block;
+  position: relative;
 }
 
 .sf-menu ul ul {
-	top: 0;
-	left: 100%;
+  top: 0;
+  left: 100%;
 }
 
 /*** Skin ***/
 .sf-menu {
-	float: right;
-	margin-top: 10px;
-	text-align: center;
+  float: right;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .sf-menu ul {
-	box-shadow: 1px 1px 6px rgba(0,0,0,.4);
-	min-width: 100%; /* allow long menu items to determine submenu width */
-	*width: 100%; /* no auto sub width for IE7, see white-space comment below */
+  box-shadow: 1px 1px 6px rgba(0,0,0,.4);
+  min-width: 100%; /* allow long menu items to determine submenu width */
+  *width: 100%; /* no auto sub width for IE7, see white-space comment below */
 }
 
 .sf-menu a {
-	font: normal 16px/1em 'Anton', 'Trebuchet MS', Arial, Helvetica, sans-serif;
-	border-left: 1px solid #fff;
-	border-top: 1px solid #dfeeff; /* fallback colour must use full shorthand */
-	border-top: 1px solid rgba(255,255,255,.5);
-	padding: .75em 3em;
-	text-decoration: none;
-	text-transform: uppercase;
-	zoom: 1; /* IE7 */
+  font: normal 16px/1em 'Anton', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #dfeeff; /* fallback colour must use full shorthand */
+  border-top: 1px solid rgba(255,255,255,.5);
+  padding: .75em 3em;
+  text-decoration: none;
+  text-transform: uppercase;
+  zoom: 1; /* IE7 */
 }
 
 .sf-menu a {color: #f2f3f4; }
 
 .sf-menu li {
-	background: #222222;
-	white-space: nowrap; /* no need for Supersubs plugin */
-	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
-	-webkit-transition: background .2s;
-	transition: background .2s;
+  background: #222222;
+  white-space: nowrap; /* no need for Supersubs plugin */
+  *white-space: normal; /* ...unless you support IE7 (let it wrap) */
+  -webkit-transition: background .2s;
+  transition: background .2s;
 }
 
 .sf-menu ul li {background: #222222; }
@@ -602,30 +453,30 @@ header {padding-top: 25px !important; }
 .sf-menu li.current,
 .sf-menu li:hover,
 .sf-menu li.sfHover {
-	background: #00CCFF;
-	/* transition in and out */
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+  background: #00CCFF;
+  /* transition in and out */
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /*** Generated Arrows **/
 .sf-arrows .sf-with-ul {
-	padding-right: 3.2em;
-	*padding-right: 3em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+  padding-right: 3.2em;
+  *padding-right: 3em; /* no CSS arrows for IE7 (lack pseudo-elements) */
 }
 /* styling for both css and generated arrows */
 .sf-arrows .sf-with-ul:after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	right: 1.2em;
-	margin-top: -2px;
-	height: 0;
-	width: 0;
-	/* order of following 3 rules important for fallbacks to work */
-	border: 5px solid transparent;
-	border-top-color: #dfeeff; /* edit this to suit design (no rgba in IE8) */
-	border-top-color: rgba(255,255,255,.5);
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 1.2em;
+  margin-top: -2px;
+  height: 0;
+  width: 0;
+  /* order of following 3 rules important for fallbacks to work */
+  border: 5px solid transparent;
+  border-top-color: #dfeeff; /* edit this to suit design (no rgba in IE8) */
+  border-top-color: rgba(255,255,255,.5);
 }
 
 .sf-arrows > li > .sf-with-ul:focus:after,
@@ -633,11 +484,11 @@ header {padding-top: 25px !important; }
 .sf-arrows > .sfHover > .sf-with-ul:after {border-top-color: white; /* IE8 fallback colour */ }
 /* styling for right-facing arrows */
 .sf-arrows ul .sf-with-ul:after {
-	margin-top: -5px;
-	margin-right: -3px;
-	border-color: transparent;
-	border-left-color: #dfeeff; /* edit this to suit design (no rgba in IE8) */
-	border-left-color: rgba(255,255,255,.5);
+  margin-top: -5px;
+  margin-right: -3px;
+  border-color: transparent;
+  border-left-color: #dfeeff; /* edit this to suit design (no rgba in IE8) */
+  border-left-color: rgba(255,255,255,.5);
 }
 
 .sf-arrows ul li > .sf-with-ul:focus:after,
@@ -651,30 +502,30 @@ nav select {display: none; }
 nav {position: relative; }
 
 nav select {
-	display: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	cursor: pointer;
-	width:  100%;
-	margin: 21px 0;
-	padding: 9px 18px 9px;
-	color: #fff;
-	font-family: 'Anton', 'Trebuchet MS', Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	border: 1px solid #1a1a1a;
-	border-top: 1px solid #1d1d1d;
-	background: #212121 url(../img/marker_select.png) right center no-repeat;
-	text-decoration: none;
+  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  width:  100%;
+  margin: 21px 0;
+  padding: 9px 18px 9px;
+  color: #fff;
+  font-family: 'Anton', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  border: 1px solid #1a1a1a;
+  border-top: 1px solid #1d1d1d;
+  background: #212121 url(../img/marker_select.png) right center no-repeat;
+  text-decoration: none;
 
-	background-size: 31px 8px;
-	-webkit-background-size: 31px 8px;
+  background-size: 31px 8px;
+  -webkit-background-size: 31px 8px;
 
-	box-shadow: inset 1px 1px 3px #1a1a1a;
-	-webkit-box-shadow: inset 1px 1px 3px #1a1a1a;
-	
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
+  box-shadow: inset 1px 1px 3px #1a1a1a;
+  -webkit-box-shadow: inset 1px 1px 3px #1a1a1a;
+  
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 
 nav select:focus {outline: none; }
@@ -706,25 +557,25 @@ nav select:focus {outline: none; }
 /* Tablet (Portrait) */
 
     @media only screen and (min-width: 768px) and (max-width: 959px) {
-		.sf-menu a {
-			font-size: 15px;
-			padding: .55em 2em;
-		}
-		.sf-arrows .sf-with-ul {
-			padding-right: 2.2em;
-			*padding-right: 2em; /* no CSS arrows for IE7 (lack pseudo-elements) */
-		}
-		.sf-arrows .sf-with-ul:after {right: .8em; }
+    .sf-menu a {
+      font-size: 15px;
+      padding: .55em 2em;
+    }
+    .sf-arrows .sf-with-ul {
+      padding-right: 2.2em;
+      *padding-right: 2em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+    }
+    .sf-arrows .sf-with-ul:after {right: .8em; }
     }
 
 /*  Mobile (Portrait) */
 
     @media only screen and (max-width: 767px) {
-		header h1 a {float: none; }
-		nav .sf-menu {display: none; }
-		nav select {	display: block; }
-		.sf-menu ul li span,
-		.sf-menu ul ul li span {display: inline-block; }
+    header h1 a {float: none; }
+    nav .sf-menu {display: none; }
+    nav select {  display: block; }
+    .sf-menu ul li span,
+    .sf-menu ul ul li span {display: inline-block; }
     }
 
 /* Mobile (Landscape) */
@@ -736,20 +587,20 @@ nav select:focus {outline: none; }
 /* FONT-FACES
 ------------------------------------------*/
 
-/*	This is the proper syntax for an @font-face file
-		Just create a "fonts" folder at the root, copy your
-		FontName into code below and remove
-		comment brackets */
+/*  This is the proper syntax for an @font-face file
+    Just create a "fonts" folder at the root, copy your
+    FontName into code below and remove
+    comment brackets */
 
 /*
-	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal;
-	}
+  @font-face {
+      font-family: 'FontName';
+      src: url('../fonts/FontName.eot');
+      src: url('../fonts/FontName.eot?iefix') format('eot'),
+           url('../fonts/FontName.woff') format('woff'),
+           url('../fonts/FontName.ttf') format('truetype'),
+           url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
 */
