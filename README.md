@@ -50,7 +50,9 @@ Tempbox is a responsive, HTML5, CSS3 and jQuery based boilerplate, designed for 
 # Version
 -------------------------------------
 
-Current Version: 1.0 | Initial Release
+Current Version: 1.1 | (SEO Update)
+
+ - 1.0 | Initial Release
 
 # License
 -------------------------------------
