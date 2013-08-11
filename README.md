@@ -58,6 +58,6 @@ Current Version: 1.1 | (SEO Update)
 -------------------------------------
 Free for personal and commercial use
 
-Copyright ® 2013 Santz Design | santzdesign.com
+Copyright ® 2013 Santz Design | http://santzdesign.com
 
 Under MIT License: http://opensource.org/licenses/MIT
